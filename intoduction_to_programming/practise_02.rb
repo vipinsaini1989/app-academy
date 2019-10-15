@@ -91,27 +91,27 @@
 # puts last_index("octagon", "o")    #=> 5
 # puts last_index("programming", "m")#=> 7
 
-# 7.
-def most_vowels(sentence)
-    new_sent = sentence.split
-    vowels = "aeiou"
-    count = 0
-    word_hash = {}
+# # 7.
+# def most_vowels(sentence)
+#     new_sent = sentence.split
+#     vowels = "aeiou"
+#     count = 0
+#     word_hash = {}
 
-    new_sent.each do |word| 
-        word.each_char do |char|
-            if vowels.include?(char)
-                count += 1
-            end
-        end
-        word_hash[word] = count
-        count = 0
-    end
+#     new_sent.each do |word| 
+#         word.each_char do |char|
+#             if vowels.include?(char)
+#                 count += 1
+#             end
+#         end
+#         word_hash[word] = count
+#         count = 0
+#     end
 
-    sorted = word_hash.sort_by { |k, v| v }
-    return sorted[-1][0]
+#     sorted = word_hash.sort_by { |k, v| v }
+#     return sorted[-1][0]
 
-end
+# end
 
-print most_vowels("what a wonderful life") #=> "wonderful"
-puts
+# print most_vowels("what a wonderful life") #=> "wonderful"
+# puts
